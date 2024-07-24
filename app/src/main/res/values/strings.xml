@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Medical Chatbot</string>
+    <string name="send">send</string>
+    <string name="ask_a_query">Ask a query</string>
+</resources>

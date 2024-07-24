@@ -1,0 +1,45 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#2C2C2C">
+
+<EditText
+        android:id="@+id/etQuery"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="@string/ask_a_query"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#80FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSend"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="@string/send"
+        android:background="@drawable/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/tvResponse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/etQuery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
